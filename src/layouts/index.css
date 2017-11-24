@@ -3,3 +3,22 @@
     display: block;
     margin-bottom: 3em;
 }
+
+/* People don't  care about Gumroad logo or style*/
+
+header.text-left.container a.gumroad-button, div.container a.gumroad-button {
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    line-height: 66px !important;
+    font-size: 21px !important;
+    background-color: #c04355 !important;
+}
+
+header.text-left.container a.gumroad-button, div.container a.gumroad-button strong {
+    color: white !important;
+    text-align: center;
+}
+header.text-left.container a.gumroad-button span.gumroad-button-logo, div.container a.gumroad-button span.gumroad-button-logo {
+  background-image: none !important;
+}

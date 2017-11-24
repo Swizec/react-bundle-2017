@@ -75,6 +75,13 @@ const Header = () => (
                     Learn how to build modern JavaScript apps from 7 expert
                     authors
                 </p>
+                <h2>LIMITED TO THE FIRST 1000 PEOPLE</h2>
+                <a className="gumroad-button"
+                    href="https://gum.co/jWTRq"
+                    data-gumroad-single="true"
+                    style={{ width: "100%", color: 'white !important;' }}
+                >GET THE DEAL NOW</a>
+                <h2><s>$3,000</s> NOW ONLY $99</h2>
             </Col>
         </Row>
     </header>
