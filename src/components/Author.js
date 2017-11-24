@@ -47,17 +47,36 @@ const AuthorsList = [
         )
     },
     {
-        src: require("../img/marcin.jpeg"),
-        name: "Marcin Grzywaczewski",
+        src: require("../img/robert.jpg"),
+        name: "Robert Pankowecki",
         bio: (
             <p>
-                Marcin Grzywaczewski is a Ruby on Rails and React.js developer,
-                since four years. Author of many popular blogposts such as
-                Approaches to testing React components and What React component
-                class syntax should I use and many others, which were read by
-                millions of developers. At Arkency he’s worked on a number of
+                Robert Pankowecki is Ruby on Rails developer, working remotely
+                for more than five years. At Arkency he's worked on number of
                 web projects in collaboration with small startups as well as
-                large corporations.
+                large corporations. The creator of active_reload library which
+                made your Rails apps faster in development mode. Founder of
+                wroc_love.rb conference and one of the leading speakers at Lower
+                Silesian Ruby User Group. Author and co-author of four books
+                ‘Async Remote' , 'Fearless Refactoring: Rails Controllers',
+                'Rails meets React.js', 'React.js by example'.
+            </p>
+        )
+    },
+    {
+        src: require("../img/andrzej.jpeg"),
+        name: "Andrzej Krzywda",
+        bio: (
+            <p>
+                Andrzej Krzywda is the founder and CEO of Arkency, a Rails
+                consultancy. He spends time reviewing dozens of legacy Rails
+                apps every year, finding patterns, applying fixes. Cares about
+                code quality, maintainability and explicitness. For 5 years he's
+                been teaching Rails at the University of Wrocław in a way that
+                shows my students the beauty and speed of delivering Rails
+                applications, as well as the mess that they can sometimes turn
+                into. Working with students has taught him patience and how to
+                structure his knowledge so it is easily digestible.
             </p>
         )
     },

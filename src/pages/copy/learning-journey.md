@@ -15,6 +15,7 @@ Don't worry, though. You don't have to go through it all. **Use as much as you w
 - *Course: Modern React with Redux* → Master the fundamentals of React and Redux with this tutorial as you develop apps with React Router, Webpack, and ES6.
 - *React Quickly* → Learn React.js fast. This hands-on book teaches you the concepts you need with plenty of examples, tutorials, and a large main project that gets built throughout the book.
 - *Learn React and Redux from A to Z* → Learn all the basics and advanced topics of React and Redux in this single video course.
+- *React by Example* → You'll learn the best practices of working with React - stubbing data with default properties, placeholder behavior handlers and more. You’ll learn how to use the powerful React ecosystem to make your work easier.
 
 ![](reactfundamentals.gif)
 
