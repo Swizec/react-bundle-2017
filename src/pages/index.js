@@ -79,7 +79,7 @@ const Header = () => (
                     className="gumroad-button"
                     href="https://gum.co/jWTRq"
                     data-gumroad-single="true"
-                    style={{ width: "100%", color: "white !important;" }}
+                    style={{ width: "100%", color: "white !important" }}
                 >
                     GET THE DEAL <s>$1,000+</s> $99
                 </a>
