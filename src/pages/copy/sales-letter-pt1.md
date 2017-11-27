@@ -16,4 +16,4 @@ That's why this holiday season 7 expert JavaScript authors got together and desi
 
 You start with the basics of modern JavaScript, continue with React and Redux, learn all about modern build tools, follow it up with native apps, build some shiny examples that would make your mom proud, and finish your journey off with some soft skills that will make you a great engineer to work with.
 
-Separately all of this would add up to more than $1000, but because it's Black Friday and Cyber Monday, you can get it for just **$99 this week**.
+Separately all of this would add up to $1,527, but because it's Black Friday and Cyber Monday, you can get it for just **$99 this week**.

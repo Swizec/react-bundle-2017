@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 import { Row, Col, Image } from "react-bootstrap";
 import Section, {
@@ -66,27 +67,71 @@ const AboveHeader = () => (
     </div>
 );
 
-const Header = () => (
-    <header className="text-left container">
-        <Row>
-            <Col md={11} mdOffset={1}>
-                <h1>Level up your skills before 2017 ends</h1>
-                <p className="lead">
-                    Learn how to build modern JavaScript apps from 7 expert
-                    authors
-                </p>
-                <a
-                    className="gumroad-button"
-                    href="https://gum.co/jWTRq"
-                    data-gumroad-single="true"
-                    style={{ width: "100%", color: "white !important" }}
-                >
-                    GET THE DEAL <s>$1,000+</s> $99
-                </a>
-            </Col>
-        </Row>
-    </header>
-);
+class Header extends React.Component {
+    copy = [
+        ["beginner", "well-paid Engineer"],
+        ["intermediate", "amazing"],
+        ["'can code'", "fighting off recruiters"]
+    ];
+
+    state = {
+        copyIdx: 0
+    };
+
+    rollTitle() {
+        setTimeout(() => {
+            this.setState({
+                copyIdx: (this.state.copyIdx + 1) % this.copy.length
+            });
+            this.rollTitle();
+        }, 3000);
+    }
+
+    componentDidMount() {
+        this.rollTitle();
+    }
+
+    render() {
+        const { copyIdx } = this.state;
+
+        return (
+            <header className="text-left container">
+                <Row>
+                    <Col md={11} mdOffset={1}>
+                        <ReactCSSTransitionReplace
+                            transitionName="cross-fade"
+                            transitionEnterTimeout={1000}
+                            transitionLeaveTimeout={1000}
+                        >
+                            <h1>
+                                Go from{" "}
+                                <span style={{ color: "darkred" }}>
+                                    {this.copy[copyIdx][0]}
+                                </span>{" "}
+                                to{" "}
+                                <span style={{ color: "darkred" }}>
+                                    {this.copy[copyIdx][1]}
+                                </span>
+                            </h1>
+                        </ReactCSSTransitionReplace>
+                        <p className="lead">
+                            Learn all about modern JavaScript from 7 expert
+                            authors
+                        </p>
+                        <a
+                            className="gumroad-button"
+                            href="https://gum.co/jWTRq"
+                            data-gumroad-single="true"
+                            style={{ width: "100%", color: "white !important" }}
+                        >
+                            Get the Special Cyber Monday deal <s>$1,527</s> $99
+                        </a>
+                    </Col>
+                </Row>
+            </header>
+        );
+    }
+}
 
 const SalesLetter = ({ part1, part2 }) => (
     <Section>
